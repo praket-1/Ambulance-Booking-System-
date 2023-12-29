@@ -62,6 +62,11 @@
 .services:active{
 
 }
+.credentials{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
 
 .loginbutton{
     font-size: 16px;
@@ -96,9 +101,4 @@
     border-bottom: black;
 }
 
-.credentials{
-    align-items: center;
-    justify-content: right;
-    display: inline-block;
-    position: relative; right: -930px;
-}
+
