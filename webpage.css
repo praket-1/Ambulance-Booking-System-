@@ -101,4 +101,40 @@
     border-bottom: black;
 }
 
+.middlepara{
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    flex: content;
+    width: 820px;
+
+
+}
+.para1{
+    font-family: "Adobe Heiti Std R";
+    color: mediumpurple;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.para2{
+    font-family: "Arial Rounded MT Bold";
+    font-size: 20px;
+}
+.para3{
+    font-size: 18px;
+    width: 630px;
+    color: darkgreen;
+    text-align: center;
+    margin-left: 90px;
+}
+.gifambulance{
+    position: absolute;
+    top: 300px;
+    right: 16px;
+    width: 700px;
+    margin-top: -120px;
+    margin-right: 50px;
+    border-color: mediumpurple;
+    border-radius: 9px;
+}
 
