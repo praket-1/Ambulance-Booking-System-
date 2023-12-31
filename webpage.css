@@ -1,17 +1,18 @@
+
 .logo{
     color: #070a4f;
     font-weight: bold;
     vertical-align: middle;
-    font-size: 21px;
+    font-size: 40px;
     padding: 0;
     margin: 0 0 0 -20px;
     display: inline-block;
     cursor: pointer;
 }
 .logoheart{
-    width: 80px;
-    vertical-align:middle;
-    margin-top: -8px;
+    height: 80px;
+    vertical-align: middle;
+    margin-top: -4px;
     display: inline-block;
 }
 .abbbt{
@@ -25,9 +26,8 @@
 }
 .about{
     color: black;
-    background-color: white;
     border:none;
-    width: 80px;
+    width: 90px;
     font-size: 19px;
     margin-right: 10px;
     cursor: pointer;
@@ -37,9 +37,8 @@
 }
 .services{
     color: black;
-    background-color: white;
     border:none;
-    width: 80px;
+    width: 90px;
     font-size: 19px;
     margin-right: 10px;
     cursor: pointer;
@@ -49,7 +48,7 @@
 }
 .about:hover{
     opacity: 0.8;
-    color: orangered;
+    color: goldenrod;
 }
 .about:active{
 
@@ -57,7 +56,7 @@
 
 .services:hover{
     opacity: 0.8;
-    color: orangered;
+    color: goldenrod;
 }
 .services:active{
 
@@ -72,33 +71,65 @@
     font-size: 16px;
     display: inline-block;
     vertical-align: middle;
-    border-style: none;
-    background-color: white;
-    margin-bottom: 4px;
+    border-style: groove;
+    
+    margin-bottom: 3px;
     cursor: pointer;
+    size: 20px;
 
 }
 .registerbutton{
     font-size: 16px;
     display: inline-block;
     vertical-align: middle;
-    border-style: none;
-    background-color: white;
+    border-style: groove;
+    border-color: black;
+    
     margin-bottom: 4px;
     cursor: pointer;
 
 
 }
 .loginbutton:hover{
-    color: orangered;
+    color: goldenrod;
+    border-color: crimson;
     opacity: 0.8;
 }
 
 .registerbutton:hover{
-    color: orangered;
+    color: goldenrod;
     opacity: 0.8;
-    border-color: orangered;
-    border-bottom: black;
+    border-color: crimson;
+}
+
+.bookingbutton{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: groove;
+    border-color: black;
+    margin-bottom: 4px;
+    cursor: pointer;
+    background-color: goldenrod;
+}
+.bookingbutton:hover{
+    color: brown;
+    opacity: 0.8;
+    border-color: crimson
+}
+.assistancecall{
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: groove;
+    border-color: black;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.assistancecall:hover{
+    color: goldenrod;
+    opacity: 0.8;
+    border-color: crimson
 }
 
 .middlepara{
@@ -112,29 +143,44 @@
 }
 .para1{
     font-family: "Adobe Heiti Std R";
-    color: mediumpurple;
+    color: saddlebrown;
     font-size: 30px;
     margin-bottom: 60px;
 }
 .para2{
+    color: darkred;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.para3{
+    color: darkred;
+    font-size: 25px;
+    font-style: italic;
+}
+.para4{
     font-family: "Arial Rounded MT Bold";
     font-size: 20px;
 }
-.para3{
+.para5{
     font-size: 18px;
     width: 630px;
-    color: darkgreen;
+    color: brown;
     text-align: center;
     margin-left: 90px;
 }
 .gifambulance{
-    position: absolute;
+    position: fixed;
     top: 300px;
     right: 16px;
-    width: 700px;
+    width: 500px;
     margin-top: -120px;
     margin-right: 50px;
     border-color: mediumpurple;
     border-radius: 9px;
 }
-
+*{
+    background-color: cornsilk;
+}
+.call{
+    size: 5px;
+}
