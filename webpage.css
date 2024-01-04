@@ -170,7 +170,7 @@
 }
 .gifambulance{
     position: absolute;
-    width: 500px;
+    width: 900px;
     margin-top: 105px;
     margin-right: 10px;
     top: 0px;
@@ -183,6 +183,7 @@
 *{
     background-color: cornsilk;
 }
-.call{
+.callimage{
+    width: 25px;
 
 }
