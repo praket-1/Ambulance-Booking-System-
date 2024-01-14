@@ -1,0 +1,16 @@
+.paraAbout{
+    align-content: center;
+    text-align: center;
+    width: 600px;
+    font-size: 28px;
+    margin-left: 550px;
+    margin-top: 85px;
+    color: #d9263b;
+    font-family: "Baskerville Old Face";
+}
+
+.helloabout{
+    align-content: center;
+    margin-left: 800px;
+    font-size: 40px;
+}

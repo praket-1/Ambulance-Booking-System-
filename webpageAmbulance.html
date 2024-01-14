@@ -28,13 +28,13 @@
 
 <div>
     <div class="abbbt">
-        <button class="about">
+        <button class="about" onclick="redirecttothispage()">
             <strong>
                 About
             </strong>
         </button>
 
-        <button class="services">
+        <button class="services" onclick="redirectTothatpage()">
             <strong>
                 Services
             </strong>
@@ -43,13 +43,15 @@
 </div>
 
 <div class="credentials">
-    <button class="loginbutton">
+    <button class="loginbutton"  onclick="redirectToPage()">
         LogIn
     </button>
 
-    <button class="registerbutton">
+    <button class="registerbutton" onclick="redirectToPage()">
         Register
     </button>
+
+
 </div>
 
 
@@ -67,7 +69,7 @@
 <p class="para2"> OR </p>
 <p class="para3"><strong> Call our assistance</strong> </p>
 
-<button class="assistancecall">+91 7270800098
+<button class="assistancecall">+91 7276789898
     <picture>
 
 
@@ -91,5 +93,25 @@
 <div>
   <img src="Ambulance gif.gif" class="gifambulance" alt="error">
 </div>
+<script>
+
+    function redirectToPage()
+    {
+        window.location.href =  'credentials.html';
+
+    }
+
+    function redirecttothispage()
+    {
+        window.location.href = 'AboutPage.html';
+    }
+
+    function redirectTothatpage()
+    {
+        window.location.href = 'ServicesPage.html'
+    }
+
+</script>
+
 
 </body>
