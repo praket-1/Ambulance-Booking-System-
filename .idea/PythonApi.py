@@ -28,10 +28,15 @@ class BookingList(Resource):
         booking = cursor.fetchall()
         return {'booking':booking}
 
-
+class usersList(Resource):
+    def get(self):
+        cursor.execute("Select * from users")
+        users = cursor.fetchall()
+        return {'users': users}
 
 api.add_resource(AmbulanceList, '/ambulances')
 api.add_resource(BookingList,'/booking')
+api.add_resource(usersList,'/users')
 
 if __name__ == '__main__':
     app.run(debug=True)
