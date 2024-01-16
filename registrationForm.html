@@ -8,7 +8,7 @@
 <body>
 <div class="center">
     <h1>Register</h1>
-    <form method="post">
+    <form id = "myform">
         <div class="txt_field">
             <input type="text" required>
             <span>
@@ -27,9 +27,36 @@
             </span>
             <label>Password</label>
         </div>
-        <input type="submit" value="Register">
+        <input type="submit" value="Register" type="button">
 
     </form>
 </div>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('password').value,
+        };
+
+        fetch('http://localhost:3000/postData', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Response from server:', data);
+                // Handle the response as needed
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+
+</script>
 </body>
 </html>
