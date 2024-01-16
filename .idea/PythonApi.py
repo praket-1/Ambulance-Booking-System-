@@ -33,6 +33,25 @@ class usersList(Resource):
         cursor.execute("Select * from users")
         users = cursor.fetchall()
         return {'users': users}
+@app.route('/api/post_data', methods=['POST'])
+def post_data():
+    try:
+        data = request.json
+        key = data.get('User_Name')
+        value = data.get('Password')
+
+        if not key or not value:
+            return jsonify({'error': 'Missing key or value'}), 400
+
+        conn = mysql.connector.connect(**DB_CONFIG)
+        cursor = conn.cursor()
+        cursor.execute('INSERT INTO data (User_Name, Password) VALUES (%s, %s)', (key, value))
+        conn.commit()
+        conn.close()
+
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 api.add_resource(AmbulanceList, '/ambulances')
 api.add_resource(BookingList,'/booking')

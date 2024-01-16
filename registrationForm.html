@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Registration</title>
     <link rel="stylesheet" href="registrationform.css">
+
 </head>
 <body>
 <div class="center">
@@ -27,7 +28,7 @@
             </span>
             <label>Password</label>
         </div>
-        <input type="submit" value="Register" type="button">
+        <input type="submit" value="Register" type="button" onclick="" >
 
     </form>
 </div>
@@ -36,11 +37,12 @@
         event.preventDefault();
 
         const formData = {
-            name: document.getElementById('name').value,
+            name: document.getElementById("").value,
             email: document.getElementById('password').value,
         };
 
-        fetch('http://localhost:3000/postData', {
+        fetch('http://localhost:63342/Ambulance-Booking-System-/registrationForm.html?_ijt=jfvkb5dv7fbij4e7ade4snuo5&_ij_reload=RELOAD_ON_SAVE',
+            {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
