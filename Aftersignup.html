@@ -43,7 +43,13 @@
                 <td>104</td>
                 <td>2123</td>
                 <td>Available</td>
-                <td><button class="three">BOOK NOW</button></td>
+                <td><button type="BOOK Now" class="three" onclick="openPopup()">BOOK NOW</button></td>
+                <div class="popup" id="popup">
+                    <img src="tick.png">
+                    <h2>Thank You!</h2>
+                    <p>Your Amblance have been Booked</p>
+                    <button type="button"onclick="closePopup()>OK</button>
+                </div>
             </tr>
             <tr>
                 <td>105</td>
@@ -54,6 +60,18 @@
             </tbody>
     </table>
     </div>
+    <script> 
+      let popup = document.getElementById("popup");
+      function openPopup(){
+        popup.classlist.add("open-popup");
+      }
+      function closePopup(){
+        popup.classlist.remove("open-popup");
+      }
+
+
+    </script>
+    
     
     
     
