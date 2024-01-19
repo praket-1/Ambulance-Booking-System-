@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 50px;
+}
+h1 {
+    color: #333;
+}
+button {
+    padding: 5px 10px;
+    font-size: 10px;
+    background-color: #351da0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ .three:hover{
+    color:gold;
+    opacity: 0.9;
+    border-color: crimson
+}
+
+.table-container{
+    margin: 80px;
+    color: black;
+    margin-inline-start: 20px;
+    border-spacing: 20px;
+}
